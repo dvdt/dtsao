@@ -20,7 +20,8 @@
 # Based on work by woods
 #
 # https://gist.github.com/31967
- 
+
+# From https://gist.github.com/insin/1425703  
 # The various escape codes that we can use to color our prompt.
 RED="\[\033[0;31m\]"
 YELLOW="\[\033[1;33m\]"
