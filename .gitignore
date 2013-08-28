@@ -1,3 +1,7 @@
 *
 !.bashrc
 !.gitignore
+
+!.ssh/
+.ssh/*
+!.ssh/id_rsa.pub
