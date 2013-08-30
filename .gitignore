@@ -1,7 +1,3 @@
-*
-!.bashrc
-!.gitignore
-!.ssh/
-.ssh/*
-!.ssh/id_rsa.pub
-!dna/
+*~
+.ssh/known_hosts
+.ssh/id_rsa
