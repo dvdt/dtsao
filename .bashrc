@@ -121,3 +121,12 @@ ${PROMPT_SYMBOL} "
  
 # Tell bash to execute this function just before displaying its prompt.
 PROMPT_COMMAND=set_bash_prompt
+
+# Color
+export CLICOLOR=1
+export LSCOLORS=GxFxCxDxBxegedabagaced
+
+# Git auto complete
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
