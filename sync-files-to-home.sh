@@ -1,1 +1,1 @@
-rsync -a --exclude=.git/ ./  ~/
+rsync -av --exclude=.git/ ./  ~/
