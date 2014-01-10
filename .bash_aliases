@@ -1,4 +1,4 @@
-git@github.com:dvdt/dtsao.gitalias blog='cd ~/Dropbox/octopress/source'
+alias blog='cd ~/Dropbox/octopress/source'
 alias measurethyself='cd /code/measurethyself && source ./venv/bin/activate'
 alias gc='git checkout'
 alias gs='git status'
