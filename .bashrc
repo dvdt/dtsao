@@ -124,9 +124,16 @@ PROMPT_COMMAND=set_bash_prompt
 
 # Color
 export CLICOLOR=1
-export LSCOLORS=GxFxCxDxBxegedabagaced
+export LSCOLORS=gxfxbEaEBxxEhEhBaDaCaD
 
 # Git auto complete
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
+
+. ~/.bash_aliases
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+export PATH=/usr/local/MATLAB/R2012b/bin:/usr/local:$PATH
+export GREP_OPTIONS='--color=always' 
+export PATH="$HOME/Library/Haskell/bin:$PATH"
