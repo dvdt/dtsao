@@ -18,7 +18,7 @@
 (add-to-list 'auto-mode-alist '("\\.markdown\\'" . gfm-mode))
 (add-to-list 'auto-mode-alist '("\\.md\\'" . gfm-mode))
 
-(add-hook 'markdown-mode-hook (lambda () (variable-pitch-mode f)))
+; (add-hook 'markdown-mode-hook (lambda () (variable-pitch-mode f)))
 (require 'color-theme-solarized)
 ;(require 'solarized-definitions
 ;         (locate-file "solarized-definitions.el" custom-theme-load-path
@@ -56,4 +56,23 @@
 (put 'narrow-to-region 'disabled nil)
 
 (setq default-directory "~/" ) 
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; Custom funs
+
+(defun what-face (pos)
+  (interactive "d")
+  (let ((face (or (get-char-property (point) 'read-face-name)
+                  (get-char-property (point) 'face))))
+    (if face (message "Face: %s" face) (message "No face at %d" pos))))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; From Steve Yegge effective emacs
+(global-set-key "\C-x\C-m" 'execute-extended-command)
+(global-set-key "\C-c\C-m" 'execute-extended-command)
+
+;(global-set-key "\C-w" 'backward-kill-word)
+(global-set-key "\C-x\C-k" 'kill-region)
+(global-set-key "\C-c\C-k" 'kill-region)
 
