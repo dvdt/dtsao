@@ -137,3 +137,5 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 export PATH=/usr/local/MATLAB/R2012b/bin:/usr/local:$PATH
 export GREP_OPTIONS='--color=always' 
 export PATH="$HOME/Library/Haskell/bin:$PATH"
+export ALTERNATE_EDITOR=""
+export EDITOR=vi
